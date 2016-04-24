@@ -155,7 +155,10 @@ body, html {
     margin: 0; }
   .catalog .catalog_item-description-param {
     font-weight: bold;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 0; }
+  .catalog .catalog_item-description-art {
+    margin: 0; }
 
 .profit {
   padding: 20px 0; }
