@@ -1,0 +1,31 @@
+.process {
+  padding: 20px 0;
+
+  .process_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .process_item {
+    width: 22%;
+  }
+
+  .process_item-operand {
+  }
+
+  .process_item-icon-container {
+    height: 50px;
+  }
+
+  .process_item-icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .process_item-title {
+    font-size: $font-size-m;
+    font-weight: bold;
+    font-family: 'Russo One', Arial, sans;
+  }
+}
