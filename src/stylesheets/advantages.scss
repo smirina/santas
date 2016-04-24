@@ -1,8 +1,12 @@
+$gap: 65px;
+
 .advantages {
   background-image: url("images/basic-bg.png");
-  // background-size: cover;
-  background-color: $brand-color;
-  padding: 20px;
+  background-size: 100% 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin-top: -$gap;
+  padding: 24px + $gap 0px;
 
   .advantages_items {
     display: flex;

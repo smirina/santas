@@ -82,8 +82,11 @@ body {
 
 .advantages {
   background-image: url("images/basic-bg.png");
-  background-color: #be3a3f;
-  padding: 20px; }
+  background-size: 100% 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin-top: -65px;
+  padding: 89px 0px; }
   .advantages .advantages_items {
     display: flex;
     justify-content: space-between;
