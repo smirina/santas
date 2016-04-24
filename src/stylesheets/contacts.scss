@@ -1,0 +1,23 @@
+.contacts {
+  padding: 20px 0;
+  text-align: center;
+  font-size: $font-size-s;
+
+  .contacts_phone {
+    font-size: $font-size-l;
+  }
+
+  .contacts_text {
+    margin: 10px;
+  }
+
+  .contacts_text--colored {
+    color: $brand-color;
+  }
+
+  .contacts_button {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+}
