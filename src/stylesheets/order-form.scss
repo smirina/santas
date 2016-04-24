@@ -1,6 +1,9 @@
 .order-form {
-  background-color: $brand-color;
-  padding: 20px 0;
+  background-image: url('images/basic-bg.png');
+  background-size: 100% 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding: 89px 0px;
 
   .order-form_container {
     width: 420px;
@@ -10,5 +13,12 @@
   .order-form_input {
     display: block;
     width: 100%;
+    background-color: transparent;
+    padding: 14px 20px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    outline-color: white;
   }
 }
