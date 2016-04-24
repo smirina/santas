@@ -1,7 +1,11 @@
 .promo {
-  background-image: url("images/header-bg.png");
-  padding-top: 20px;
-  padding-bottom: 60px;
+  background-image: linear-gradient(0deg, #DFE1E0, #fff, #F8FAF9, #F6F8F7);
+
+  .promo_block {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-image: url("images/header-bg.png");
+  }
 
   .promo_title {
     font-size: $font-size-xl;

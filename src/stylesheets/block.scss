@@ -1,4 +1,10 @@
+$block-width: 1200px;
+
 .block {
-  width: 1200px;
+  min-width: $block-width;
   margin: 0 auto;
+
+  &.block--straight {
+    width: $block-width;
+  }
 }

@@ -33,8 +33,10 @@ body {
   align-items: center; }
 
 .block {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto; }
+  .block.block--straight {
+    width: 1200px; }
 
 .container {
   width: 1020px;
@@ -64,9 +66,11 @@ body {
     color: #be3a3f; }
 
 .promo {
-  background-image: url("images/header-bg.png");
-  padding-top: 20px;
-  padding-bottom: 60px; }
+  background-image: linear-gradient(0deg, #DFE1E0, #fff, #F8FAF9, #F6F8F7); }
+  .promo .promo_block {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-image: url("images/header-bg.png"); }
   .promo .promo_title {
     font-size: 40px;
     font-family: 'Russo One', 'Arial', sans;
