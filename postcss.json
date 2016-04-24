@@ -1,0 +1,8 @@
+{
+  "use": ["autoprefixer"],
+  "replace": true,
+  "input": "dist/bundle.css",
+  "autoprefixer": {
+    "browsers": "> 5%"
+  }
+}

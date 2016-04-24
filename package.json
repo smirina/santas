@@ -12,8 +12,11 @@
     "slick-carousel": "^1.5.9"
   },
   "devDependencies": {
-    "node-sass": "^3.4.2",
+    "autoprefixer": "^6.3.6",
     "browser-sync": "^2.12.1",
+    "node-sass": "^3.4.2",
+    "postcss": "^5.0.19",
+    "postcss-cli": "^2.5.2",
     "watch": "^0.17.1"
   },
   "scripts": {
@@ -24,7 +27,8 @@
     "vendors": "touch dist/vendors.css && cat $npm_package_config_vendors > dist/vendors.css",
     "sass": "node-sass ./src/stylesheets/index.scss ./dist/bundle.css",
     "slick": "cp node_modules/slick-carousel/slick/slick.min.js dist/",
-    "jquery": "cp node_modules/jquery/dist/jquery.min.js dist/"
+    "jquery": "cp node_modules/jquery/dist/jquery.min.js dist/",
+    "postcss": "postcss -c postcss.json"
   },
   "author": "Irina Smyshlyaeva <nitchenkoiv@gmail.com>",
   "license": "ISC"

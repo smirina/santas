@@ -33,9 +33,12 @@ body, html {
     background-color: white; }
 
 .main-header {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center; }
 
 .block {
   min-width: 1200px;
@@ -57,8 +60,10 @@ body, html {
 
 .main-nav {
   width: 430px;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 .fast-contacts {
   text-align: right;
@@ -98,8 +103,10 @@ body, html {
   margin-top: -65px;
   padding: 89px 0px; }
   .advantages .advantages_items {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     flex-wrap: wrap;
     text-align: center; }
   .advantages .advantages_item {
@@ -131,19 +138,26 @@ body, html {
 .catalog {
   padding: 20px 0; }
   .catalog .catalog_items {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     flex-wrap: wrap; }
   .catalog .catalog_item {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
     width: 340px;
     height: 340px;
     padding: 30px;
     margin-bottom: 20px; }
     .catalog .catalog_item.catalog_item--reverse {
-      flex-direction: row-reverse; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+              flex-direction: row-reverse; }
   .catalog .catalog_item-image {
     max-height: 100%;
     max-width: 45%;
@@ -164,8 +178,10 @@ body, html {
 .profit {
   padding: 20px 0; }
   .profit .profit_items {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
   .profit .profit_item {
     max-width: 30%; }
   .profit .profit_item-title {
@@ -196,9 +212,11 @@ body, html {
 .photos {
   padding: 20px 0; }
   .photos .photos_container {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
   .photos .photos_item {
     height: 280px;
     margin-bottom: 10px; }
@@ -226,9 +244,12 @@ body, html {
 .process {
   padding: 20px 0; }
   .process .process_items {
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline; }
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+            align-items: baseline; }
   .process .process_item {
     width: 22%; }
   .process .process_item-icon-container {
@@ -284,24 +305,32 @@ body, html {
 
 .slick-slider .slick-prev {
   left: 0;
-  transform: scaleX(-1);
-  filter: FlipH;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%); }
   .slick-slider .slick-prev:hover {
+    background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); }
 
 .slick-slider .slick-next {
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
   right: 0; }
   .slick-slider .slick-next:hover {
+    background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); }
 
 .slick-slider .slick-dots {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   flex-wrap: nowrap;
   margin-top: 10px; }
   .slick-slider .slick-dots li button {
