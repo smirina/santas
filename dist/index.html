@@ -377,9 +377,57 @@
       </div>
     </div>
   </section>
-  <section class="gallery-block" id="gallery">
-    <h2>Установленные фигуры</h2>
-    <div class="gallery"></div>
+  <section class="gallery block" id="gallery">
+    <div class="container">
+      <h2 class="container_title">Установленные фигуры</h2>
+    </div>
+    <div class="carousel">
+      <img class="carousel_image" src="images/slider/IMG_1119.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_1120.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_1121.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_1122.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7304.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7312.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7314.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7318.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7548.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7551.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7553.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7555.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7556.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7563.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7564.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7571.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7578.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7580.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7802.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7803.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7804.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7805.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7806.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7845.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7846.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7851.jpg" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7852.JPG" alt="">
+      <img class="carousel_image" src="images/slider/IMG_7853.jpg" alt="">
+    </div>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true,
+          prevArrow: '<button type="button" class="slick-prev"><img src="images/shevron.png"></button>',
+          nextArrow: '<button type="button" class="slick-next"><img src="images/shevron.png"></button>',
+        });
+      });
+    </script>
   </section>
   <section class="freecatalog-form">
     <div class="container container--colored freecatalog-form_container">

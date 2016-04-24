@@ -1,0 +1,49 @@
+.slick-slider {
+  .slick-arrow {
+    position: absolute;
+    z-index: 100;
+    height: 320px;
+    top: 0;
+    width: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-dots {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    li button{
+      width: 12px;
+      height: 12px;
+      border: 2px solid $brand-color;
+      background: transparent;
+      border-radius: 50%;
+      padding: 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      outline: none;
+      margin: 3px;
+      cursor: pointer;
+    }
+
+    .slick-active button {
+      background-color: $brand-color;
+    }
+  }
+
+}
