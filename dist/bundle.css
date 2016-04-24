@@ -16,7 +16,7 @@ body {
   line-height: 1.5; }
 
 .button {
-  border: 2px solid #be3a3f;
+  border: 2px solid #C42026;
   padding: 14px 40px;
   text-decoration: none;
   display: inline-block;
@@ -26,7 +26,7 @@ body {
   .button.button--colored {
     border: 2px solid white;
     background-color: white;
-    color: #be3a3f; }
+    color: #C42026; }
 
 .main-header {
   display: flex;
@@ -64,7 +64,7 @@ body {
     font-size: 22px;
     font-weight: bold; }
   .fast-contacts .fast-contacts_mail {
-    color: #be3a3f; }
+    color: #C42026; }
 
 .promo {
   background-image: linear-gradient(0deg, #DFE1E0, #fff, #F8FAF9, #F6F8F7); }
@@ -106,7 +106,7 @@ body {
 .comment-block {
   width: 850px;
   padding: 30px;
-  border: 2px solid #be3a3f;
+  border: 2px solid #C42026;
   position: relative; }
   .comment-block:before {
     position: absolute;
@@ -114,7 +114,7 @@ body {
     left: 65px;
     content: '';
     border: 14px solid transparent;
-    border-bottom-color: #be3a3f; }
+    border-bottom-color: #C42026; }
   .comment-block:after {
     position: absolute;
     top: -28px;
@@ -140,7 +140,7 @@ body {
     .catalog .catalog_item.catalog_item--reverse {
       flex-direction: row-reverse; }
     .catalog .catalog_item:hover {
-      box-shadow: 0 0 4px 2px #be3a3f; }
+      box-shadow: 0 0 4px 2px #C42026; }
   .catalog .catalog_item-image {
     max-height: 100%;
     max-width: 45%; }
@@ -195,3 +195,21 @@ body {
   .photos .photos_item {
     height: 280px;
     margin-bottom: 10px; }
+
+.process {
+  padding: 20px 0; }
+  .process .process_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+  .process .process_item {
+    width: 22%; }
+  .process .process_item-icon-container {
+    height: 50px; }
+  .process .process_item-icon {
+    display: block;
+    margin: 0 auto; }
+  .process .process_item-title {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Russo One', Arial, sans; }
