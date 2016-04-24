@@ -20,13 +20,13 @@ body {
   padding: 14px 40px;
   text-decoration: none;
   display: inline-block;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #be3a3f; }
   .button:hover {
     text-decoration: none; }
   .button.button--colored {
     border: 2px solid white;
-    background-color: white;
-    color: #be3a3f; }
+    background-color: white; }
 
 .main-header {
   display: flex;
@@ -215,3 +215,24 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     outline-color: white; }
+
+.contacts {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px; }
+  .contacts .contacts_phone {
+    font-size: 30px; }
+  .contacts .contacts_text {
+    margin: 10px; }
+  .contacts .contacts_text--colored {
+    color: #be3a3f; }
+  .contacts .contacts_button {
+    margin-top: 50px;
+    margin-bottom: 20px; }
+
+.gradient {
+  height: 65px;
+  background-image: url("images/gradient.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  background-repeat: no-repeat; }
