@@ -146,7 +146,8 @@ body, html {
       flex-direction: row-reverse; }
   .catalog .catalog_item-image {
     max-height: 100%;
-    max-width: 45%; }
+    max-width: 45%;
+    margin: 0 10px; }
   .catalog .catalog_item-description-title {
     font-size: 22px;
     font-weight: bold;
@@ -263,7 +264,7 @@ body, html {
 
 .carousel .carousel_image {
   height: 320px;
-  padding: 0 5px;
+  padding: 0 3px;
   outline: none; }
 
 .slick-slider .slick-arrow {

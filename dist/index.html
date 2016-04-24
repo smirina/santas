@@ -296,10 +296,11 @@
   <section class="order-form block" id="form">
     <div class="container container--colored order-form_container">
       <h2 class="container_title">Купить фигуру</h2>
-      <form action="#">
-        <input class="order-form_input" type="text" name="name" placeholder="Имя">
-        <input class="order-form_input" type="text" name="art" placeholder="Телефон">
-        <input class="order-form_input" type="email" name="phone" placeholder="E-mail">
+      <form action="mail.php" method="post">
+        <input class="order-form_input" type="text" name="name" placeholder="Имя" required="required">
+        <input class="order-form_input" type="text" name="art" placeholder="Название товара / Артикул" required="required">
+        <input class="order-form_input" type="text" name="phone" placeholder="Телефон" required="required">
+        <input type="hidden" name="type" value="buy" required="required">
         <submit class="button button--colored">Оставить заявку</submit>
       </form>
       <p>Вам перезвонят в течение 20 минут</p>
@@ -416,10 +417,11 @@
   <section class="freecatalog-form block">
     <div class="container container--colored freecatalog-form_container">
       <h2 class="container_title">Получить бесплатный каталог</h2>
-      <form action="#">
+      <form action="mail.php" method="post">
         <input class="freecatalog-form_input" type="text" name="name" placeholder="Имя">
-        <input class="freecatalog-form_input" type="text" name="art" placeholder="Телефон">
-        <input class="freecatalog-form_input" type="text" name="phone" placeholder="E-mail">
+        <input class="freecatalog-form_input" type="text" name="phone" placeholder="Телефон">
+        <input class="freecatalog-form_input" type="email" name="email" placeholder="E-mail">
+        <input type="hidden" name="type" value="catalog">
         <submit class="button button--colored">Получить каталог с ценами</submit>
       </form>
       <p></p>
