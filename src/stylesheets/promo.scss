@@ -1,0 +1,23 @@
+.promo {
+  background-image: url("images/header-bg.png");
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  .promo_title {
+    font-size: $font-size-xl;
+    font-family: 'Russo One', 'Arial', sans;
+    margin-bottom: 60px;
+    line-height: 1.3;
+  }
+
+  .promo_text {
+    margin-top: 50px;
+    width: 440px;
+  }
+
+  .promo_list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 34px;
+  }
+}

@@ -1,0 +1,22 @@
+.advantages {
+  background-image: url("images/basic-bg.png");
+  // background-size: cover;
+  background-color: $brand-color;
+  padding: 20px;
+
+  .advantages_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .advantages_item {
+    min-width: 22%;
+  }
+
+  .advantages_items-title {
+    font-size: $font-size-m;
+    font-family: 'Russo One', Arial, sans;
+  }
+}

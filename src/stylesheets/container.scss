@@ -1,0 +1,16 @@
+.container {
+  width: 1020px;
+  margin: 0 auto;
+
+  .container_title {
+    font-family: 'Russo One', Arial, sans;
+    font-weight: bold;
+    font-size: $font-size-l;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &.container--colored {
+    color: white;
+  }
+}

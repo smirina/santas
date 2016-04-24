@@ -1,0 +1,27 @@
+{
+  "name": "santas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "vendors": "node_modules/normalize.css/normalize.css"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "browser-sync": "^2.12.1",
+    "watch": "^0.17.1"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*.css",
+    "build": "npm run clean && npm run vendors && npm run sass",
+    "watch": "watch 'npm run build' src/stylesheets/",
+    "server": "browser-sync start --server dist --files 'dist/*'",
+    "vendors": "touch dist/vendors.css && cat $npm_package_config_vendors > dist/vendors.css",
+    "sass": "node-sass ./src/stylesheets/index.scss ./dist/bundle.css"
+  },
+  "author": "Irina Smyshlyaeva <nitchenkoiv@gmail.com>",
+  "license": "ISC"
+}

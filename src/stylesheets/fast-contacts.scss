@@ -1,0 +1,14 @@
+.fast-contacts {
+  text-align: right;
+  padding-top: 20px;
+
+  .fast-contacts_phone {
+    font-family: 'Russo One', Arial, sans;
+    font-size: $font-size-m;
+    font-weight: bold;
+  }
+
+  .fast-contacts_mail {
+    color: $brand-color;
+  }
+}

@@ -1,0 +1,24 @@
+.comment-block {
+  width: 850px;
+  padding: 30px;
+  border: 2px solid $brand-color;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: -30px;
+    left: 65px;
+    content: '';
+    border: 14px solid transparent;
+    border-bottom-color: $brand-color;
+  }
+
+  &:after {
+    position: absolute;
+    top: -28px;
+    left: 65px;
+    content: '';
+    border: 14px solid transparent;
+    border-bottom-color: white;
+  }
+}
