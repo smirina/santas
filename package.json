@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "config": {
-    "vendors": "node_modules/normalize.css/normalize.css"
+    "vendors": "node_modules/normalize.css/normalize.css node_modules/slick-carousel/slick/slick.css"
   },
   "dependencies": {
-    "normalize.css": "^4.1.1"
+    "jquery": "^2.2.3",
+    "normalize.css": "^4.1.1",
+    "slick-carousel": "^1.5.9"
   },
   "devDependencies": {
     "node-sass": "^3.4.2",
@@ -16,11 +18,13 @@
   },
   "scripts": {
     "clean": "rm -rf dist/*.css",
-    "build": "npm run clean && npm run vendors && npm run sass",
-    "watch": "watch 'npm run build' src/stylesheets/",
+    "build": "npm run clean && npm run vendors && npm run sass && npm run slick && npm run jquery",
+    "watch": "watch 'npm run sass' src/stylesheets/",
     "server": "browser-sync start --server dist --files 'dist/*'",
     "vendors": "touch dist/vendors.css && cat $npm_package_config_vendors > dist/vendors.css",
-    "sass": "node-sass ./src/stylesheets/index.scss ./dist/bundle.css"
+    "sass": "node-sass ./src/stylesheets/index.scss ./dist/bundle.css",
+    "slick": "cp node_modules/slick-carousel/slick/slick.min.js dist/",
+    "jquery": "cp node_modules/jquery/dist/jquery.min.js dist/"
   },
   "author": "Irina Smyshlyaeva <nitchenkoiv@gmail.com>",
   "license": "ISC"
