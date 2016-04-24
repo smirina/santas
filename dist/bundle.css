@@ -262,7 +262,9 @@ body, html {
   padding: 20px 0; }
 
 .carousel .carousel_image {
-  height: 320px; }
+  height: 320px;
+  padding: 0 5px;
+  outline: none; }
 
 .slick-slider .slick-arrow {
   position: absolute;
@@ -272,13 +274,22 @@ body, html {
   width: 50px;
   background: transparent;
   border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
 
 .slick-slider .slick-prev {
-  left: 0; }
+  left: 0;
+  transform: scaleX(-1);
+  filter: FlipH;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%); }
+  .slick-slider .slick-prev:hover {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); }
 
 .slick-slider .slick-next {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
   right: 0; }
+  .slick-slider .slick-next:hover {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); }
 
 .slick-slider .slick-dots {
   list-style-type: none;
@@ -286,7 +297,8 @@ body, html {
   margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-top: 10px; }
   .slick-slider .slick-dots li button {
     width: 12px;
     height: 12px;
