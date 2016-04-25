@@ -1,5 +1,5 @@
 <?php
-$receiver  = "v@vforvova.ru";
+$receiver  = "plast-3d@yandex.ru";
 
 $type = $_POST['type'];
 
